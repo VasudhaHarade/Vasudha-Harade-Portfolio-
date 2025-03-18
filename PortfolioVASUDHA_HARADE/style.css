@@ -1,0 +1,321 @@
+/* Reset and Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* color: white; */
+    color: black;
+    /* background-color: rgb(1, 11, 11); */
+    background-image: url(image/new.jpg);
+    text-align: center;
+    padding: 50px 5%;
+    background-size: cover;
+    background-position: center;
+
+  
+   
+}
+/* .container{
+    position: relative;
+    height: 100%;
+    background: #e67e22;
+} */
+
+/* Navbar Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 50px;
+    background: rgb(179, 179, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    font-size: 22px;
+    color: bisque;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar .active {
+    color: aqua;
+}
+
+/* Section Styling */
+section {
+    padding: 100px 10%;
+}
+
+.home {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.home:hover {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.home h1 {
+    animation: headingColorChange 3s infinite alternate;
+    font-weight: bold;
+}
+
+.home h3 {
+    font-weight: bold;
+    color: purple;
+}
+
+.home p {
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid purple;
+    width: 0;
+    color: green;
+    animation: typingP 5s steps(40, end) forwards, blink 0.7s step-end infinite, textColorChange 4s 5s infinite alternate;
+}
+
+/* Keyframes */
+@keyframes headingColorChange {
+    0%   { color: purple; }
+    25%  { color: deeppink; }
+    50%  { color: teal; }
+    75%  { color: darkorange; }
+    100% { color: purple; }
+}
+
+@keyframes typingP {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: purple; }
+}
+
+@keyframes textColorChange {
+    0% { color: green; }
+    50% { color: black; }
+    100% { color: purple; }
+}
+
+/* Icons */
+.icon {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    color: aqua;
+}
+
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: aliceblue;
+    transform:scaleX();
+    border-radius: 30px;
+
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 1.6;
+        backdrop-filter: blur(10px);          /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);  /* Safari support */
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional border for glass effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    transition: all 0.4s ease;
+    
+
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid bisque; 
+    box-shadow:10px whitesmoke;
+    overflow: hidden;
+    background-size: cover;
+
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    /* color: white; */
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: aliceblue; */
+    transform:scaleX();
+    border-radius: 30px;
+    
+}
+
+.skill {
+    background-color: bisque;
+    color: black;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.skill h2 {
+    background-color: bisque;
+    color: black;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #e67e22;
+    /* color: white; */
+    color: black;
+    
+}
+
+/* Portfolio Section */
+/* Portfolio Section */
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
+
+.project {
+    background-color: bisque;
+    color: black;
+    padding: 30px;
+
+    border-radius: 12px;  /* Rectangle with slightly rounded corners */
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+}
+
+.project:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);  /* Hover zoom effect */
+}
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+
+
+
+/* Contact Section */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    background: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
