@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Reset and Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: white;
+            background-color: rgb(1, 11, 11);
+            text-align: center;
+        }
+
+        /* Navbar Styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 50px;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 22px;
+            color: bisque;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: azure;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover, .navbar .active {
+            color: aqua;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 50px 10%;
+            background-color: rgb(1, 11, 11);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* About Image */
+        .about-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid bisque;
+        }
+
+        /* About Text */
+        .about-text {
+            max-width: 600px;
+            padding-left: 50px;
+        }
+
+        .about-text h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .about-text h3 {
+            font-size: 24px;
+            color: aqua;
+            margin-bottom: 10px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Resume Button */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text {
+                padding-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <a href="index.html" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="profile.jpg" alt="My Profile Picture">
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <h3>I'm a Full Stack Developer</h3>
+                <p>
+                    Hello! I'm **Vasudha Santosh Harade**, a passionate **Full Stack Developer** skilled in **Java, C++, Python, HTML, CSS, and JavaScript**. 
+                    I have a strong foundation in software development and have built an **Online Event Management System** as part of my academic project.
+                </p>
+                <p>
+                    I am always eager to learn new technologies and work on exciting projects that solve real-world problems.
+                    I enjoy coding, problem-solving, and collaborating with teams to build efficient and user-friendly applications.
+                </p>
+                <a href="resume.pdf" class="btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

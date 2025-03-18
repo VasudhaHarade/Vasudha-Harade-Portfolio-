@@ -1,0 +1,98 @@
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body background and text color */
+body {
+    background-color: rgb(1, 11, 11);
+    color: white;
+}
+
+/* Navbar Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    color: bisque;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Navbar Links */
+.navbar a {
+    font-size: 20px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar a:hover {
+    color: aqua;
+}
+
+/* Active Link Effect */
+.navbar a.active {
+    color: #f39c12;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+/* Home Content */
+.home-content h1 {
+    font-size: 48px;
+}
+
+.home-content h3 {
+    font-size: 24px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+}
